@@ -95,6 +95,13 @@ h5 {
 .current {
   color: var(--main-accent-color);
 }
+.current:hover .current::after {
+  content: '';
+  width: 48px;
+  height: 4px;
+  background-color: var(--main-accent-color);
+  
+}
 .head-contact-icon-envelope,
 .head-contact-icon-smartphone {
   margin-right: 10px;
