@@ -64,7 +64,7 @@
       <section class="effective">
         <div class="container container-eff">
           <h1 class="effective-h">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
-          <button type="button" class="effective-btn">Замовити послугу</button>
+          <button data-modal-open type="button" class="effective-btn">Замовити послугу</button>
         </div>
       </section>
       <!--Особливості-->
@@ -125,25 +125,41 @@
           <h2 class="our-work-h">Чим ми займаємося</h2>
           <ul class="our-work-list list">
             <li class="item">
-              <img src="./images/img-01.jpg" alt="Працюємо" width="370" height="294" class="img" />
+              <div class="our-work-item-div">
+                <img
+                  src="./images/img-01.jpg"
+                  alt="Працюємо"
+                  width="370"
+                  height="294"
+                  class="img"
+                />
+                <h3 class="our-work-list-h">Десктопні додатки</h3>
+              </div>
+            </li>
+
+            <li class="item">
+              <div class="our-work-item-div">
+                <img
+                  src="./images/img-02.jpg"
+                  alt="Перевіряємо адаптації"
+                  width="370"
+                  height="294"
+                  class="img"
+                />
+                <h3 class="our-work-list-h">Мобільні додатки</h3>
+              </div>
             </li>
             <li class="item">
-              <img
-                src="./images/img-02.jpg"
-                alt="Перевіряємо адаптації"
-                width="370"
-                height="294"
-                class="img"
-              />
-            </li>
-            <li class="item">
-              <img
-                src="./images/img-03.jpg"
-                alt="Використовуємо всю палітру кольорів"
-                width="370"
-                height="294"
-                class="img"
-              />
+              <div class="our-work-item-div">
+                <img
+                  src="./images/img-03.jpg"
+                  alt="Використовуємо всю палітру кольорів"
+                  width="370"
+                  height="294"
+                  class="img"
+                />
+                <h3 class="our-work-list-h">Дизайнерські рішення</h3>
+              </div>
             </li>
           </ul>
         </div>
@@ -459,5 +475,15 @@
         </div>
       </div>
     </footer>
+    <div data-modal class="backdrop is-hidden">
+      <div class="modal">
+        <button data-modal-close type="button" class="icon-close">
+          <svg width="20" height="20" class="icon-close-black-18">
+            <use href="./images/icons.svg#icon-close-black-18"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
